@@ -1,0 +1,28 @@
+    <!-- mian-content -->
+    <section class="main-content" id="home">
+      <!-- /header -->
+      <header>
+        <div class="container-fluid px-lg-5 px-3">
+          <!-- nav -->
+          <nav class="py-2 d-lg-flex">
+            <div id="logo">
+              <h1><a class="navbar-brand logo" [routerLink]="[ '/home' ]">
+                  <img src="../../../assets/images/sapiensLogo.jpg" alt="">
+                </a></h1>
+            </div>
+            <label for="drop" class="toggle">Menu</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu ml-auto">
+              <li routerLinkActive="active"><a [routerLink]="[ '/home' ]">Home</a></li>
+              <li routerLinkActive="active"><a [routerLink]="[ '/servicios' ]">Servicios</a></li>
+              <li routerLinkActive="active"><a [routerLink]="[ '/precios' ]">Precios</a></li>
+              <li routerLinkActive="active"><a [routerLink]="[ '/contactos' ]">Contacto</a></li>
+              <li routerLinkActive="active"><a [routerLink]="[ '/inicio-sesion' ]">Iniciar sesión</a></li>
+            </ul>
+          </nav>
+          <!-- //nav -->
+        </div>
+      </header>
+      <!-- //header -->
+      <!-- //banner -->
+    </section>

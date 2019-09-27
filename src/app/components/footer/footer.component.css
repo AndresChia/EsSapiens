@@ -1,0 +1,171 @@
+.list-group .list-group-item {
+
+  background-color: #222b31;
+  text-align: center;
+
+}
+
+.list-group .list-group-item a {
+  color: #f0f4f7;
+}
+
+footer {
+  padding-top: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 2rem !important;
+
+  margin-top: 1rem !important;
+
+}
+
+footer div {
+  padding-bottom: 0 !important;
+
+}
+
+
+/* footer */
+
+.address-grid span {
+  font-size: 40px;
+  color: #fff;
+}
+
+.address-right p,
+.address-right p a {
+  color: #f8f9fa;
+}
+
+footer {
+  background: #1e272e;
+}
+
+
+
+/* social-icons footer */
+
+.loaction-content {
+  text-align: left;
+}
+
+.w3ls-footer ul li,
+.payment-moblsmk ul li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.w3ls-footer ul li a span {
+  height: 40px;
+  width: 40px;
+  line-height: 2.5;
+  background: none;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+.w3ls-footer ul li a span.fa-facebook-f:hover {
+  background: #3b5998;
+  color: #fff;
+  border-color: #3b5998;
+}
+
+.w3ls-footer ul li a span.fa-twitter:hover {
+  background: #55acee;
+  color: #fff;
+  border-color: #55acee;
+}
+
+.w3ls-footer ul li a span.fa-dribbble:hover {
+  background: #f26522;
+  color: #fff;
+  border-color: #f26522;
+}
+
+.w3ls-footer ul li a span.fa-vk:hover {
+  background: #45668e;
+  color: #fff;
+  border-color: #45668e;
+}
+
+/* //social-icons footer */
+
+
+/* //footer */
+
+a.move-top span {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border: transparent;
+  line-height: 2em;
+  background: #626c733b;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+/*-- //footer --*/
+
+.contact_grid_left h6 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+.contact_grid_left ul li span {
+  font-size: 16px;
+  color: #fff;
+}
+
+.contact_grid_left li span {
+  background: #ffa801;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 50%;
+}
+
+.contact_grid_left ul li p,
+.contact_grid_left ul li a {
+  color: #5a646b;
+  letter-spacing: 1px;
+}
+
+
+.contact_grid_left h6 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.contact_grid_right {
+  background: #f7f7f7;
+  padding: 5em;
+}
+
+.contact_grid_left {
+  border-bottom: 1px solid #313c44;
+  margin: 0 0 0 0;
+  padding-bottom: 3em;
+}
+
+.contact-page button.btn.btn-default {
+  width: 20%;
+}
+
+/* //contact address */
