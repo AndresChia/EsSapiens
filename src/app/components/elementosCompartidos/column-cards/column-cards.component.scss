@@ -7,6 +7,25 @@ $black: #000;
 $open-sans: 'Open Sans',
 sans-serif;
 
+.card {
+  border: none;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+P {
+  font-size: 0.7rem;
+}
+
+.row {
+  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 // clear-fix mixin
 @mixin cf {
 
@@ -44,7 +63,7 @@ h1 {
 
 .row {
   max-width: 900px;
-  margin: 50px auto 0;
+  // margin: 50px auto 0;
 }
 
 // Base styles
@@ -80,7 +99,7 @@ h1 {
 
   .wrapper {
     background-color: $white;
-    min-height: 540px;
+    min-height: 345px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
