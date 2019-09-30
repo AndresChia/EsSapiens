@@ -19,6 +19,27 @@ P {
   font-size: 0.7rem;
 }
 
+
+.letraTexto {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2em;
+  color: #000;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 1px solid #000;
+  font-family: "Muli", sans-serif;
+}
+
+.contenedorTitulo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+
+
+
 .row {
   margin-bottom: 100px;
   margin-top: 50px;

@@ -1,0 +1,62 @@
+<body>
+
+  <div class="grid align__item">
+
+
+    <div class="card">
+
+      <header class="card__header">
+        <h3 class="card__title">Detalle de pago</h3>
+
+      </header>
+
+      <form action="" method="post" class="form">
+
+        <div class="card__number form__field">
+          <label for="card__number" class="card__number__label">Numero de tarjeta</label>
+          <input type="text" id="card__number" class="card__number__input" placeholder="4000 1234 5678 9010">
+          <img class="card__logo" [src]="'../../../../assets/images/'+tipoTarjeta+'.png'" alt="">
+        </div>
+
+
+        <div class="card__expiration form__field">
+          <label for="card__expiration__year">Expiración</label>
+          <select name="" id="card__expiration__month">
+            <option value="Enero">Enero</option>
+            <option value="Febrero">Febrero</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Abril">Abril</option>
+            <option value="Mayo">Mayo</option>
+            <option value="Junio">Junio</option>
+            <option value="Julio">Julio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Septiembre">Septiembre</option>
+            <option value="Octubre">Octubre</option>
+            <option value="Noviembre">Noviembre</option>
+            <option value="Diciembre">Diciembre</option>
+          </select>
+
+          <select name="" id="card__expiration__year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+
+        <div class="card__ccv form__field">
+          <label for="">CCV</label>
+          <input type="text" class="card__ccv__input" placeholder="583">
+        </div>
+
+      </form>
+
+    </div>
+
+
+  </div>
+
+
+</body>

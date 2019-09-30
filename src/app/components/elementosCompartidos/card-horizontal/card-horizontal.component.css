@@ -8,6 +8,9 @@
 }
 
 
+
+
+
 @media (min-width: 40em) {
   :root {
     --box-y-padding: 4rem;
@@ -155,7 +158,21 @@ img {
 
 .arrow-izquierda {
   position: absolute;
-  top: 50%;
+  left: 1rem;
+
+  height: 82vh;
+  width: 5rem;
+}
+
+.arrow-izquierda:hover {
+  cursor: pointer;
+  background-color: #00000036;
+  border-radius: 5px;
+}
+
+.arrow-izquierda a {
+  top: 38%;
+  position: relative;
   left: 1rem;
 }
 
@@ -165,10 +182,31 @@ img {
 
 .arrow-derecha {
   position: absolute;
-  top: 50%;
-  left: 96%;
+  top: 15%;
+  left: calc(100% - 6rem);
+  height: 82vh;
+  width: 5rem;
+}
+
+.arrow-derecha:hover {
+  cursor: pointer;
+  background-color: #00000036;
+  border-radius: 5px;
+}
+
+.arrow-derecha a {
+  top: 38%;
+  position: relative;
+  left: 1.7rem;
 }
 
 .arrow-derecha i {
   font-size: 98px;
+}
+
+
+.img img {
+  width: 630px;
+  height: 430px;
+  background-size: cover;
 }

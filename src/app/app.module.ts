@@ -13,6 +13,12 @@ import { HomeComponent } from './components/home/home.component';
 import { CardHorizontalComponent } from './components/elementosCompartidos/card-horizontal/card-horizontal.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ColumnCardsComponent } from './components/elementosCompartidos/column-cards/column-cards.component';
+import { RegistroComponent } from './components/sistema/registro/registro.component';
+import { ControlarPestañasService } from './services/controlar-pestañas.service';
+import { TabViewModule } from 'primeng/tabview';
+
+import { FormsModule } from '@angular/forms';
+import { PaymentCardComponent } from './components/elementosCompartidos/payment-card/payment-card.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +31,18 @@ import { ColumnCardsComponent } from './components/elementosCompartidos/column-c
     LoginComponent,
     HomeComponent,
     CardHorizontalComponent,
-    ColumnCardsComponent
+    ColumnCardsComponent,
+    RegistroComponent,
+    PaymentCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    TabViewModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ControlarPestañasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

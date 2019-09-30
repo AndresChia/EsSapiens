@@ -149,6 +149,12 @@ input::-moz-focus-inner {
   /* border: 0; */
 }
 
+h5 {
+  text-align: center;
+  margin-top: 9px;
+  font-size: 0.6rem;
+}
+
 #submit {
   color: #ffffff;
   margin-top: 40px;
