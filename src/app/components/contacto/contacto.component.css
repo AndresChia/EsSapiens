@@ -23,6 +23,8 @@ div.form-group input {
 }
 
 .content-forma {
+  background: url(../../../assets/images/fondo.png);
+  background-size: cover;
   margin-left: 10vw;
   margin-right: 10vw;
   background-repeat: no-repeat;
@@ -306,6 +308,7 @@ div.form-group input {
   }
 
   .content-forma {
+
     margin-top: 7vw;
     margin-right: 0px;
     width: 96vw;

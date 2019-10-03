@@ -20,7 +20,7 @@
             "tsConfig": "tsconfig.app.json",
             "aot": false,
             "assets": [
-              "src/favicon.ico",
+              "src/sapiens.ico",
               "src/assets"
             ],
             "styles": [
@@ -84,11 +84,13 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
+              "src/sapiens.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/font-awesome.css",
+              "src/assets/css/bootstrap.css"
             ],
             "scripts": []
           }

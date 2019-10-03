@@ -6,7 +6,7 @@
   <h1>{{titulos[opcionActual]}}</h1>
   <div class="content">
     <p>{{cuerpo[opcionActual]}}</p>
-    <a href="">{{boton[opcionActual]}}</a>
+    <a (click)="irA()" style="cursor: pointer">{{boton[opcionActual]}}</a>
   </div>
   <div class="img">
     <img src="../../../../assets/images/{{images[opcionActual]}}" />

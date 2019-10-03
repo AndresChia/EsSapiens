@@ -76,7 +76,7 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.4em;
   margin: 0 0 1rem;
   font-family: serif;
   position: relative;
@@ -92,16 +92,22 @@ h1::after {
   left: 0;
 }
 
-@media (min-width: 40em) {
+/* @media (min-width: 40em) {
   h1::after {
     left: var(--box-x-padding);
     top: var(--box-y-padding);
   }
-}
+} */
 
 .content {
   color: #4d4d4d;
   /* margin-bottom: var(--box-y-padding); */
+}
+
+.content a {
+  margin-top: 18px;
+  text-align: center;
+  width: 100%;
 }
 
 /* @media (min-width: 40em) {

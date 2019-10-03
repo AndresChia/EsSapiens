@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-horizontal',
@@ -10,14 +11,15 @@ export class CardHorizontalComponent implements OnInit {
 
   faCoffee = faCoffee;
 
-  titulos = ["Titulo1", "Titulo2", "Titulo3"];
-  cuerpo = ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias.",
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, laborum suscipit doloremque, expedita voluptatum maiores corporis modi assumenda esse consectetur error nulla, vero alias."];
-  boton = ["boton1", "boton2", "boton3"];
+  titulos = ["Software a la medida", "Soporte de software", "Banco gratuito de informacion"];
+  cuerpo = ["Lleva todos los servicios que tiene tu entidad educativa a un solo lugar, gestiona y crea espacios dedicados a cubrir las necesidades de tus estudiantes y personal administrativo.",
+    "Manten tu software actualizado y al pendiente de tus necesidades, con el soporte cubriran las necesidades cambiantes de tu plantel educativo.",
+    "Como estudiante lo mas dificil es tener los elementos necesarios para estudiar, en un solo lugar encontraras todas las herramientas para poder iniciar."];
+  boton = ["Contactanos", "Inicia sesion", "Registrate"];
   images = ["home1.jpg", "home2.jpg", "home3.jpg"];
+  linksBotones = ['contactos', 'inicio-sesion', 'registro'];
   opcionActual = 0;
-  constructor() { }
+  constructor(public _router: Router) { }
 
   ngOnInit() {
   }
@@ -40,6 +42,11 @@ export class CardHorizontalComponent implements OnInit {
 
       }
     }
+
+  }
+
+  irA() {
+    this._router.navigateByUrl('/' + this.linksBotones[this.opcionActual]);
 
   }
 
