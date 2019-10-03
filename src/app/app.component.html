@@ -1,3 +1,3 @@
-<app-header *ngIf="controlar.getRutaActual() !== '/registro'"></app-header>
+<app-header *ngIf="controlar.getRutasSin()"></app-header>
 <router-outlet></router-outlet>
-<app-footer *ngIf="controlar.getRutaActual() !== '/registro'"></app-footer>
+<app-footer *ngIf="controlar.getRutasSin()"></app-footer>

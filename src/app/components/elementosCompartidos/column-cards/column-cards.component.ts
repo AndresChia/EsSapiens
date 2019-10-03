@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-column-cards',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./column-cards.component.scss']
 })
 export class ColumnCardsComponent implements OnInit {
+
+  @Input('estudiante') estudiante: boolean = true;
+  @Input('entidad') entidad: boolean = true;
+  @Input('conTitulo') conTitulo: boolean = true;
+
 
   constructor() { }
 

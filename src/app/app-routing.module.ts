@@ -7,6 +7,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
 import { LoginComponent } from './components/sistema/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegistroComponent } from './components/sistema/registro/registro.component';
+import { HomeSistemaComponent } from './components/sistema/home-sistema/home-sistema.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,17 @@ const routes: Routes = [
     path: 'registro',
     component: RegistroComponent
   }, {
+    path: 'sapiens',
+    component: HomeSistemaComponent,
+    children: [
+      {
+        path: 'home',
+        component: HomeSistemaComponent,
+      }
+    ]
+  },
+  {
+
     path: '**',
     redirectTo: 'home'
   }

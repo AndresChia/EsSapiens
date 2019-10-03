@@ -20,6 +20,23 @@ export class ControlarPestañasService implements OnInit {
     return this.rutaActual + "";
   }
 
+
+  public getRutasSin() {
+
+
+    if (this.rutaActual !== '/registro' &&
+      this.rutaActual !== '/sapiens/home') {
+
+      return true;
+
+    } else {
+
+      return false;
+    }
+
+
+  }
+
   // tslint:disable-next-line:contextual-lifecycle
   ngOnInit(): void {
     console.log("service on");

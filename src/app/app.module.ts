@@ -19,6 +19,7 @@ import { TabViewModule } from 'primeng/tabview';
 
 import { FormsModule } from '@angular/forms';
 import { PaymentCardComponent } from './components/elementosCompartidos/payment-card/payment-card.component';
+import { HomeSistemaComponent } from './components/sistema/home-sistema/home-sistema.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PaymentCardComponent } from './components/elementosCompartidos/payment-
     CardHorizontalComponent,
     ColumnCardsComponent,
     RegistroComponent,
-    PaymentCardComponent
+    PaymentCardComponent,
+    HomeSistemaComponent
   ],
   imports: [
     BrowserModule,

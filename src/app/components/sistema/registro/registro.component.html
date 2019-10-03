@@ -1,7 +1,11 @@
 <body>
   <header>
     <div class="contHeader">
-      <div class="logoHeader"><img alt="" src="../../../../assets/images/sapiensLogo.png" style="cursor: pointer"></div>
+      <div class="logoHeader">
+        <a [routerLink]="[ '/home' ]">
+          <img src="../../../../assets/images/sapiensLogo.png" style="cursor: pointer">
+        </a>
+      </div>
     </div>
   </header>
   <section class="seccionFormulario">
@@ -10,8 +14,6 @@
 
         <h1 class="titulo">Elige tu licencia</h1>
         <div class="contenedorPrimero form-group">
-
-
           <div class="formulario">
             <div class="tabs">
               <input class="ocultar" (click)="setPlan('estudiante')" checked="" id="tab1" name="tab" type="radio">
@@ -19,6 +21,10 @@
               <input class="ocultar" (click)="setPlan('entidad')" id="tab2" name="tab" type="radio">
               <label for="tab2">Entidad educativa</label>
               <div class="tab" [ngClass]="{'ocultar': tipoLicencia!== 'estudiante'}">
+
+
+                <app-column-cards [estudiante]="true" [entidad]="false" [conTitulo]="false"></app-column-cards>
+
 
                 <div class="form-group form-datosGenerales">
 
@@ -86,17 +92,95 @@
                     <app-payment-card [tipoTarjeta]="buttonTarjetaTipo"></app-payment-card>
                   </div>
                 </div>
+                <div *ngIf="tipoMetodoPago == 'efectivo'">
 
+                  <div class="form-group">
+                    <label for=""></label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <small id="helpId" class="form-text text-muted">Help text</small>
+                  </div>
+
+                </div>
+                <div *ngIf="tipoMetodoPago == 'consignacion'">
+
+                </div>
 
 
               </div>
               <div class="tab" [ngClass]="{'ocultar': tipoLicencia!== 'entidad'}">
+                <app-column-cards [estudiante]="false" [entidad]="true" [conTitulo]="false"></app-column-cards>
+
+
+                <div class="form-group form-datosGenerales">
+
+                  <h2 style="text-align:center;margin-bottom: 25px;">Datos generales</h2>
+
+
+                  <div class="row" style="margin-bottom: 5px;">
+                    <div class="col-6">
+                      <label for="">Nombre de la Entidad educativa</label>
+                      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                    <div class="col-6">
+                      <label for="">Nit / identificación </label>
+                      <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+                    </div>
+                  </div>
+
+                  <label for="">Dirección</label>
+                  <input style="margin-bottom: 5px;" type="email" name="" id="" class="form-control" placeholder=""
+                    aria-describedby="helpId">
+
+                  <label for="">Numero Telefonico</label>
+                  <input style="margin-bottom: 5px;" type="number" name="" id="" class="form-control" placeholder=""
+                    aria-describedby="helpId">
+
+                </div>
+
+
+                <h2 style="text-align:center;margin-bottom: 25px;">Metodo de pago</h2>
+
 
                 <ul class="list-group list-group-horizontal">
-                  <li (click)="seleccionarMetodoPago('tarjeta')" class="list-group-item col-4">Tarjeta de credito</li>
-                  <li (click)="seleccionarMetodoPago('efectivo')" class="list-group-item col-4">Efectivo</li>
-                  <li (click)="seleccionarMetodoPago('consignacion')" class="list-group-item col-4">Consignación</li>
+                  <li [ngClass]="{'activoMetodo': tipoMetodoPago == 'tarjeta'}"
+                    (click)="seleccionarMetodoPago('tarjeta')" class="list-group-item col-4">Tarjeta de credito</li>
+                  <li [ngClass]="{'activoMetodo': tipoMetodoPago == 'efectivo'}"
+                    (click)="seleccionarMetodoPago('efectivo')" class="list-group-item col-4">Efectivo</li>
+                  <li [ngClass]="{'activoMetodo': tipoMetodoPago == 'consignacion'}"
+                    (click)="seleccionarMetodoPago('consignacion')" class="list-group-item col-4">Consignación</li>
                 </ul>
+
+
+
+                <div *ngIf="tipoMetodoPago == 'tarjeta'">
+                  <div class="contenedorTarjeta">
+                    <label class="LabelDocumento">Tipo de tarjeta <a class="itemRequerido"><span>*</span></a></label>
+                    <div class="column50">
+                      <p><input [(ngModel)]="buttonTarjetaTipo" name="metodoPagoDetallePago" type="radio"
+                          value="icon-american" class="ng-untouched ng-pristine ng-invalid"><img
+                          src="/assets/images/icon-american.png">
+                        American Express</p>
+                      <p><input [(ngModel)]="buttonTarjetaTipo" name="metodoPagoDetallePago" type="radio"
+                          value="icon-master" class="ng-untouched ng-pristine ng-invalid"><img
+                          src="/assets/images/icon-master.png"> Master
+                        Card</p>
+                    </div>
+                    <div class="column50">
+                      <p><input [(ngModel)]="buttonTarjetaTipo" name="metodoPagoDetallePago" type="radio"
+                          value="icon-diners" class="ng-untouched ng-pristine ng-invalid"><img
+                          src="/assets/images/icon-diners.png"> Diners
+                        Club</p>
+                      <p><input [(ngModel)]="buttonTarjetaTipo" name="metodoPagoDetallePago" type="radio"
+                          value="icon-visa" class="ng-untouched ng-pristine ng-invalid"><img
+                          src="/assets/images/icon-visa.png"> Visa</p>
+                    </div>
+                    <app-payment-card [tipoTarjeta]="buttonTarjetaTipo"></app-payment-card>
+                  </div>
+                </div>
+
+
+
+
               </div>
 
 
@@ -142,6 +226,11 @@
               </tr>
             </tbody>
           </table>
+
+          <br><br><br>
+          <button type="button" name="" id="" class="btn btn-dark btn-block">Pagar</button>
+
+
         </div>
 
       </div>

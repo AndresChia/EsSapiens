@@ -1,8 +1,8 @@
-<div class="contenedorTitulo">
+<div class="contenedorTitulo" *ngIf="estudiante && conTitulo">
   <h1 class="letraTexto">Estudiantes</h1>
 </div>
 
-<div class="row">
+<div class="row" *ngIf="estudiante">
   <div class="example-1 card col-sm">
     <div class="wrapper">
       <div class="date">
@@ -51,11 +51,11 @@
 
 </div>
 
-<div class="contenedorTitulo">
+<div class="contenedorTitulo" *ngIf="entidad && conTitulo">
   <h1 class="letraTexto">Entidades educativas</h1>
 </div>
 
-<div class="row">
+<div class="row" *ngIf="entidad">
   <div class="example-1 card col-sm">
     <div class="wrapper">
       <div class="date">

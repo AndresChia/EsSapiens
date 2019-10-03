@@ -188,3 +188,9 @@ header {
 .activoMetodo {
   background: #7b746b33;
 }
+
+.LabelDocumento,
+.column50 {
+  padding-top: 30px !important;
+
+}
