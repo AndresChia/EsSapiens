@@ -1,0 +1,96 @@
+#calendar {
+  width: 1115px;
+  height: 142px;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid #A2ADBC;
+  font: normal 12px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #616B76;
+  text-align: center;
+  background-color: #fff;
+}
+
+
+.nav,
+.nav a {
+  font: bold 18px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+caption {
+  width: 1115px;
+  margin: 0;
+  padding: 0;
+  background: #A2ADBC;
+  color: #fff;
+  font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+th {
+  font: bold 11px/20px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  color: #616B76;
+  background: #D9E2E1;
+  border-right: 1px solid #A2ADBC;
+  border-bottom: 1px solid #A2ADBC;
+  border-top: 1px solid #A2ADBC;
+}
+
+.today,
+td.today a,
+td.today a:link,
+td.today a:visited {
+  color: #F6F4DA;
+  font-weight: bold;
+  background: #DF9496;
+}
+
+td {
+  border-right: 1px solid #A2ADBC;
+  border-bottom: 1px solid #A2ADBC;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+td a {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+td a:link,
+td a:visited {
+  color: #608194;
+}
+
+td a:hover,
+td a:active {
+  color: #6aa3ae;
+}
+
+caption a {
+  display: inline;
+}
+
+tr {
+  height: 49px;
+}
+
+.menuInfo {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  border-left: 1px solid #c8c8c8;
+  background: #f5f5f5;
+  top: 0px;
+}
+
+.titulo {
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 23px;
+}

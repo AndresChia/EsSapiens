@@ -19,6 +19,9 @@ export class SistemaComponent implements OnInit {
       nombre: "Banco de datos"
     },
     {
+      nombre: "Almanaque"
+    },
+    {
       nombre: "Horario"
     },
     {

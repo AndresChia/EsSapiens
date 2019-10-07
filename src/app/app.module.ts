@@ -27,6 +27,8 @@ import { BancoDeDatosComponent } from './components/sistema/banco-de-datos/banco
 import { ProximamenteComponent } from './components/sistema/proximamente/proximamente.component';
 
 import { ChartsModule } from 'ng2-charts';
+import { AlmanaqueComponent } from './components/sistema/almanaque/almanaque.component';
+import { HorarioComponent } from './components/sistema/horario/horario.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { ChartsModule } from 'ng2-charts';
     SistemaComponent,
     TabMenuComponent,
     BancoDeDatosComponent,
-    ProximamenteComponent
+    ProximamenteComponent,
+    AlmanaqueComponent,
+    HorarioComponent
   ],
   imports: [
     BrowserModule,
