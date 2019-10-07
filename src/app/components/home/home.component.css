@@ -1,9 +1,9 @@
-.boton button.btn.btn-default {
+.botonAccion button.btn.btn-default {
   width: 100%;
   margin-top: 34px;
 }
 
-.boton button.btn {
+.botonAccion button.btn {
   background: #181a1d;
   padding: 10px 30px;
   font-size: 12px;
@@ -22,7 +22,7 @@
   width: 100%;
 }
 
-.boton button.btn:hover {
+.botonAccion button.btn:hover {
   background: #ffa801;
 }
 
@@ -551,4 +551,20 @@ h5.tag {
   .popup {
     width: 80%;
   }
+}
+
+.thumbnail.card {
+  height: 443px;
+}
+
+
+.botonAccion {
+  bottom: 0px;
+  position: absolute;
+  margin-bottom: 29px;
+  width: 250px;
+}
+
+.card-title {
+  height: 80px;
 }

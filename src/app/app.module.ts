@@ -20,6 +20,13 @@ import { TabViewModule } from 'primeng/tabview';
 import { FormsModule } from '@angular/forms';
 import { PaymentCardComponent } from './components/elementosCompartidos/payment-card/payment-card.component';
 import { HomeSistemaComponent } from './components/sistema/home-sistema/home-sistema.component';
+import { HeaderSistemaComponent } from './components/sistema/header-sistema/header-sistema.component';
+import { SistemaComponent } from './components/sistema/sistema.component';
+import { TabMenuComponent } from './components/sistema/tab-menu/tab-menu.component';
+import { BancoDeDatosComponent } from './components/sistema/banco-de-datos/banco-de-datos.component';
+import { ProximamenteComponent } from './components/sistema/proximamente/proximamente.component';
+
+
 
 @NgModule({
   declarations: [
@@ -35,7 +42,12 @@ import { HomeSistemaComponent } from './components/sistema/home-sistema/home-sis
     ColumnCardsComponent,
     RegistroComponent,
     PaymentCardComponent,
-    HomeSistemaComponent
+    HomeSistemaComponent,
+    HeaderSistemaComponent,
+    SistemaComponent,
+    TabMenuComponent,
+    BancoDeDatosComponent,
+    ProximamenteComponent
   ],
   imports: [
     BrowserModule,

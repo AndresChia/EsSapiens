@@ -1,0 +1,29 @@
+<header>
+  <div class="logoHeader"><a title="Sapiens" href="null"><img src="../../../../assets/images/sapiensLogo.png"></a>
+  </div>
+  <div class="iconsHeader">
+    <ul>
+      <li><a id="user" title="Usuario"><img src="../../../../assets/images/icoHeaderUser.png"></a></li>
+    </ul>
+  </div>
+</header>
+
+<div>
+  <nav>
+    <div class="panel-group" id="accordion">
+      <ul>
+
+        <span *ngFor="let menu of menus;let i=index" (click)="opcion(menu,i)" class="nivel1  true ">
+          <li>
+            <div>
+              <a type="button" tabindex="0" id="N-1-OPC-0-Menu#Compras" class="anivel1 icon-icoCompra  true aSubmenu">
+                <label title="Compras">{{menu.nombre}}</label>
+              </a>
+            </div>
+          </li>
+        </span>
+
+      </ul>
+    </div>
+  </nav>
+</div>

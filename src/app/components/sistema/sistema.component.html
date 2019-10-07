@@ -1,0 +1,17 @@
+<app-header-sistema [menus]="menus" (cambioHeader)="cambioEnHeader($event)"></app-header-sistema>
+<app-tab-menu [indiceActual]="tabActual" [tabs]="ListTabs" (cerroTabs)="cerroTab($event)"
+  (cambioTabs)="cambioDeTabs($event)"></app-tab-menu>
+<div [ngSwitch]="tabActual">
+
+  <div class="contenedorTab">
+    <app-home-sistema *ngSwitchCase="'Home'" class="activoTab"></app-home-sistema>
+    <app-banco-de-datos *ngSwitchCase="'Banco de datos'" class="activoTab"></app-banco-de-datos>
+    <app-proximamente *ngSwitchCase="'Clases'"></app-proximamente>
+    <app-proximamente *ngSwitchCase="'Horario'"></app-proximamente>
+    <app-proximamente *ngSwitchCase="'Parqueadero'"></app-proximamente>
+    <app-proximamente *ngSwitchCase="'Biblioteca'"></app-proximamente>
+    <app-proximamente *ngSwitchCase="'Medio universitario'"></app-proximamente>
+  </div>
+
+
+</div>

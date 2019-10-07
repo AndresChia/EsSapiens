@@ -1,0 +1,258 @@
+<div class="contenedorBd" style="display: flex;">
+
+  <div class="col-2 menuLateral">
+
+    <div class="contenedorNuevo">
+      <button type="button" name="" id="" class="botonNuevo btn btn-lg btn-block">
+        <img src="../../../../assets/images/plus.png" alt="">
+        Nuevo
+      </button>
+
+    </div>
+
+    <div class="menuList">
+
+      <ul>
+        <li (click)="cambiarOpcion('semestre')"><a>Semestre Actual</a></li>
+        <li (click)="cambiarOpcion('semestre')"><a>Semestre 3</a></li>
+        <li (click)="cambiarOpcion('semestre')"><a>Semestre 2</a></li>
+        <li (click)="cambiarOpcion('semestre')"><a>Semestre 1</a></li>
+      </ul>
+
+
+    </div>
+
+
+
+  </div>
+
+  <div class="col-10 menuDatos">
+
+    <span [ngSwitch]="opcion">
+      <div *ngSwitchCase="'Home'">
+
+        <div class="titulo">
+          <h1>Recientes</h1>
+        </div>
+
+        <div class="row clearfix">
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'semestre'">
+        <div class="titulo">
+          <h1>Asignaturas</h1>
+
+          <div class="menuList menuAsignaturas">
+
+            <ul>
+              <li class="col-3"><a>Calculo Diferencial</a></li>
+              <li class="col-3"><a>Fisica mecanica</a></li>
+              <li class="col-3"><a>Pensamiento algoritmico</a></li>
+              <li class="col-3"><a>Pensamiento sistemico</a></li>
+            </ul>
+            <ul>
+              <li class="col-3"><a>Introducción a Ing.Sistema</a></li>
+              <li class="col-3"><a>Lectura y lectores</a></li>
+            </ul>
+
+          </div>
+
+
+
+        </div>
+
+        <div class="row clearfix">
+
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card">
+              <div class="file">
+                <a (click)="masInfo()" style="cursor: pointer">
+                  <div class="hover">
+                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
+                      <i class="zmdi zmdi-delete"></i>
+                    </button>
+                  </div>
+                  <div class="icon">
+                    <i class="zmdi zmdi-file-text"></i>
+                  </div>
+                  <div class="file-name">
+                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
+                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </span>
+
+
+
+  </div>
+
+
+  <div *ngIf="mostrarMas" class="col-2 menuInfo">
+
+    <span class="tab-close" (click)="cerrarMasInfo()"><img src="../../../../assets/images/icoClose.png"></span>
+
+    <div class="titulo">
+      <h1 style="font-size: 1.5rem;">Detalle del archivo</h1>
+    </div>
+
+    <h6>Document_2017.doc</h6>
+    <h6>Size: 42KB</h6>
+    <h6>Nov 02, 2017</h6>
+    <h6>Andres Chia</h6>
+
+
+  </div>
+
+</div>

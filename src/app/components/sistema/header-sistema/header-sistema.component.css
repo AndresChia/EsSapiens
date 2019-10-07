@@ -1,0 +1,395 @@
+header {
+  height: 35px;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  z-index: 99;
+  background: #050469;
+  background: linear-gradient(to bottom, #050469 0, #1c1b5e 37%);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .25);
+}
+
+.logoHeader {
+  float: left;
+  width: 100%;
+  max-width: 299px;
+  height: 100%;
+  box-shadow: 10px 0 10px 0 rgba(0, 0, 0, .15);
+}
+
+.logoHeader a {
+  height: 100%;
+  display: block;
+  background: #0e0c75;
+  position: relative;
+}
+
+
+header .logoHeader a img {
+  height: 95%;
+  top: calc(50% - 1px);
+}
+
+.logoHeader a img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.iconsHeader {
+  float: left;
+  width: 100%;
+  max-width: calc(100% - 300px);
+  height: 100%;
+  position: relative;
+}
+
+.iconsHeader ul {
+  width: 100%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  text-align: right;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.iconsHeader ul li:nth-of-type(3) {
+  width: 24px;
+  height: 24px;
+}
+
+.iconsHeader ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.panel-group {
+  height: 100%;
+  margin-left: 15px;
+  width: calc(100% - 80px);
+}
+
+.panel-group ul {
+  height: 100%;
+  max-width: 100%;
+}
+
+.panel-group ul span,
+.panel-group ul span li,
+.panel-group ul span li div {
+  float: left;
+  height: 100%;
+}
+
+.nivel1 a {
+  float: left;
+  height: 100%;
+  padding: 0 15px;
+  position: relative;
+  text-align: center;
+  -webkit-appearance: none;
+  color: #000000;
+}
+
+.nivel1 a.icon-icoCompra:before {
+  background-position: -16px 0;
+}
+
+
+.nivel1 a:before {
+  top: 2px;
+}
+
+.nivel1 a:before {
+  width: 16px;
+  height: 16px;
+  top: 7px;
+  left: calc(50% - 10px);
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  background: url(../../../../assets/images/iconsMenu.png) no-repeat;
+}
+
+
+.nivel1 a label {
+  margin-top: 19px;
+}
+
+.nivel1 a label {
+  font-size: 13px;
+  float: left;
+  margin-top: 27px;
+  cursor: pointer;
+  font-family: RalewayMedium, sans-serif;
+}
+
+
+
+nav {
+  height: 34px;
+  top: 35px;
+}
+
+nav {
+  background: #e7e7e7;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  z-index: 98;
+  box-shadow: 0 4px 8px 0 rgba(7, 91, 148, .3);
+}
+
+
+.navTabs {
+  width: calc(100% - 50px);
+  margin: 0 45px 0 5px;
+}
+
+.navTabs {
+  float: left;
+  width: calc(100% - 70px);
+  /* margin: 0 50px 0 20px; */
+  position: relative;
+  display: flex;
+  overflow: auto;
+  padding-left: 0px;
+}
+
+.navTabs:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  z-index: 0;
+}
+
+.navTabs li:last-of-type.active {
+  box-shadow: none;
+}
+
+.navTabs li:last-of-type {
+  padding: 0 35px 0 15px;
+}
+
+.navTabs li:first-of-type {
+  margin-left: -4px;
+}
+
+.navTabs li.active {
+  background: #f5f5f5;
+  z-index: 1;
+  padding-top: 0px;
+}
+
+.navTabs li {
+  padding-top: 0px;
+}
+
+.navTabs li {
+  min-width: 55px;
+  height: 20px;
+  position: relative;
+  padding: 6px 20px 0 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  background: #fff;
+  cursor: pointer;
+  outline: 0;
+}
+
+.navTabs li:first-of-type:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  background: url(../../../../assets/images/tabNavCornerActive.jpg) no-repeat, url(../../../../assets/images/bgTopTabNav.jpg) repeat-x;
+  background-position-x: 0, 13px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navTabs li:first-of-type:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background: url(../../../../assets/images/tabNavCornerFirst.jpg) no-repeat, url(../../../../assets/images/bgTopTabNav.jpg) repeat-x;
+  background-position-x: 0, 13px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navTabs li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 28px;
+  background: url(../../../../assets/images/tabNavCornerActive.jpg) no-repeat, url(../../../../assets/images/bgTopTabNav.jpg) repeat-x;
+  background-position-x: 0, 13px;
+}
+
+.navTabs li:after,
+.navTabs li:before {
+  height: 19px !important;
+}
+
+.navTabs li:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background: url(../../../../assets/images/tabNavCorner.jpg) no-repeat, url(../../../../assets/images/bgTopTabNav.jpg) repeat-x;
+  background-position-x: 0, 13px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.navTabs li .app-tab {
+  line-height: 20px;
+}
+
+.navTabs li .app-tab {
+  float: left;
+  width: 100%;
+}
+
+.navTabs li.active .app-tab div,
+.navTabs li:hover .app-tab div {
+  color: #0d8bdf;
+}
+
+.navTabs li .app-tab div {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: RalewayMedium, sans-serif;
+}
+
+.wrapperClose {
+  height: calc(100% - 96px);
+  margin-top: 70px;
+  margin-bottom: 21px;
+  padding: 5px 0 0;
+}
+
+.wrapperClose {
+  float: left;
+  width: 100%;
+  height: calc(100% - 161px);
+  margin-top: 110px;
+  margin-bottom: 31px;
+  padding: 20px 0 0;
+  background: #f5f5f5;
+}
+
+
+
+
+
+
+
+.navTabs li:last-of-type:after {
+  left: 4px;
+  padding-left: 13px;
+}
+
+.navTabs li:last-of-type:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 13px;
+  width: 100%;
+  height: 27px;
+  background: url(../../../../assets/images/tabNavCornerLastActive.jpg) no-repeat;
+  border-bottom: 1px solid #f5f5f5;
+  background-position-x: calc(100% - 13px);
+}
+
+/* .navTabs li:first-of-type.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+   background: #f5f5f5; 
+}
+
+*/
+
+
+
+/* .navTabs li:last-of-type:after {
+  left: 11px;
+  padding-left: 2px;
+} */
+
+
+.navTabs li.active:after {
+  left: 4px;
+  height: auto !important;
+}
+
+/* .navTabs li:last-of-type:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 13px;
+  width: 100%;
+  height: 25px;
+  background: url(../../../../assets/images/tabNavCornerLast.jpg) no-repeat;
+  border-bottom: 1px solid #ccc;
+  background-position-x: calc(100% - 13px);
+} */
+
+.navTabs li.active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 13px;
+  width: 100%;
+  height: 27px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+
+.navTabs li:after {
+  left: 11px;
+}
+
+
+.navTabs li:after,
+.navTabs li:before {
+  height: 19px !important;
+}
+
+.navTabs li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 13px;
+  width: 100%;
+  height: 27px;
+  border-bottom: 1px solid #ccc;
+}

@@ -8,6 +8,7 @@ import { LoginComponent } from './components/sistema/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegistroComponent } from './components/sistema/registro/registro.component';
 import { HomeSistemaComponent } from './components/sistema/home-sistema/home-sistema.component';
+import { SistemaComponent } from './components/sistema/sistema.component';
 
 
 const routes: Routes = [
@@ -32,11 +33,11 @@ const routes: Routes = [
     component: RegistroComponent
   }, {
     path: 'sapiens',
-    component: HomeSistemaComponent,
+    component: SistemaComponent,
     children: [
       {
         path: 'home',
-        component: HomeSistemaComponent,
+        component: SistemaComponent,
       }
     ]
   },

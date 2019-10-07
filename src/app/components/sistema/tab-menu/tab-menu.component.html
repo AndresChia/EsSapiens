@@ -1,0 +1,18 @@
+<div class="wrapperClose">
+  <ul class="navTabs" oncontextmenu="return false;">
+
+    <li *ngFor="let tab of tabs,let i=index" tabindex="0" [ngClass]="{'active': indiceActual==tab.nombre}"
+      title="{{tab.nombre}}" (click)="cambiarOpcion($event,i,tab)" [ngStyle]="{'padding-top': '0px'}">
+      <div class="app-tab">
+        <div [ngStyle]="{'font-size': '13px'}"> {{tab.nombre}}
+        </div>
+        <span (click)="cerrarOpcion(tab,i)" *ngIf="tab.nombre !== 'Home'" class="tab-close">
+          <img src="../../../../assets/images/icoClose.png">
+        </span>
+      </div>
+
+
+    </li>
+
+  </ul>
+</div>

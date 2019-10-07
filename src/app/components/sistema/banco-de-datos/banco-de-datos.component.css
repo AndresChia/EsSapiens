@@ -1,0 +1,147 @@
+.menuLateral {
+  height: 72vh;
+  border-right: 1px solid #c8c8c8;
+  margin-top: 7px;
+}
+
+.botonNuevo {
+  border-radius: 40px;
+  background-color: #ffa801;
+}
+
+.botonNuevo img {
+  width: 30px;
+  height: 30px;
+  left: -43px;
+  position: relative;
+}
+
+.contenedorNuevo {
+  border-bottom: 1px solid #c8c8c8;
+  padding-bottom: 8px;
+  margin-top: 17px;
+}
+
+
+
+
+.card {
+  transition: .5s;
+  border: 0;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  border-radius: .55rem;
+}
+
+
+.file {
+  position: relative;
+  border-radius: .55rem;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.file .hover {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.file .icon {
+  padding: 15px 10px;
+  display: table;
+  width: 100%;
+}
+
+.file .image,
+.file .icon {
+  height: 150px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top;
+}
+
+.file .file-name {
+  padding: 10px;
+  border-top: 1px solid #eceff1;
+}
+
+.file .icon i {
+  display: table-cell;
+  font-size: 30px;
+  vertical-align: middle;
+  color: #757575;
+}
+
+.zmdi {
+  display: inline-block;
+  font: normal normal normal 14px/1 'Material-Design-Iconic-Font';
+  font-size: 18px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.zmdi-file-text:before {
+  content: '\f222';
+}
+
+
+.menuDatos {
+  padding-bottom: 21px;
+  padding-top: 21px;
+}
+
+.titulo {
+  border-bottom: 1px solid #c8c8c8;
+  margin-bottom: 23px;
+}
+
+.menuList ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.menuList ul li:hover {
+  background: #0e0c75;
+  color: aliceblue;
+}
+
+.menuList ul li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid #c8c8c8;
+  border-radius: 18px;
+  padding-left: 13px;
+  padding-top: 4px;
+  height: 32px;
+}
+
+.menuAsignaturas ul {
+  display: flex;
+  margin-bottom: 0px;
+}
+
+.menuAsignaturas ul li {
+  margin-right: 4px;
+}
+
+.menuInfo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: absolute;
+  height: 100%;
+  right: 0px;
+  border-left: 1px solid #c8c8c8;
+  background: #f5f5f5;
+}
+
+.tab-close {
+  top: 0px;
+  position: absolute;
+  left: 5px;
+}
