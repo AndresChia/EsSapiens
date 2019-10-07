@@ -26,6 +26,7 @@ import { TabMenuComponent } from './components/sistema/tab-menu/tab-menu.compone
 import { BancoDeDatosComponent } from './components/sistema/banco-de-datos/banco-de-datos.component';
 import { ProximamenteComponent } from './components/sistema/proximamente/proximamente.component';
 
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { ProximamenteComponent } from './components/sistema/proximamente/proxima
     AppRoutingModule,
     FontAwesomeModule,
     TabViewModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   providers: [ControlarPestañasService],
   bootstrap: [AppComponent]

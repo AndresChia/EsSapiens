@@ -393,3 +393,48 @@ nav {
   height: 27px;
   border-bottom: 1px solid #ccc;
 }
+
+.menuUser {
+
+  position: absolute;
+  height: 65px;
+  right: 11px;
+  width: 211px;
+  top: 46px;
+  border: 1px solid #c8c8c8;
+  background: #f5f5f5;
+  z-index: +9999999999999999;
+
+}
+
+
+
+.menuList ul {
+  list-style: none;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.menuList ul li:hover {
+  background: #0e0c75;
+  color: aliceblue;
+}
+
+.menuList ul li {
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+
+
+  border-bottom: 1px solid #c8c8c8;
+  padding-left: 13px;
+  height: 32px;
+
+}
+
+.tab-close {
+  cursor: pointer;
+  position: absolute;
+  left: 1px;
+  top: -4px;
+}

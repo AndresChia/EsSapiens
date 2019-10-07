@@ -3,7 +3,9 @@
   </div>
   <div class="iconsHeader">
     <ul>
-      <li><a id="user" title="Usuario"><img src="../../../../assets/images/icoHeaderUser.png"></a></li>
+      <li style="cursor: pointer" (click)="abrirMenu()"><a id="user" title="Usuario"><img
+            src="../../../../assets/images/icoHeaderUser.png"></a>
+      </li>
     </ul>
   </div>
 </header>
@@ -26,4 +28,21 @@
       </ul>
     </div>
   </nav>
+</div>
+
+<div *ngIf="menuUser" class="menuUser menuList">
+  <span class="tab-close" (click)="cerrarUserOpciones()"><img src="../../../../assets/images/icoClose.png"></span>
+
+  <ul>
+    <li>
+      Configuración
+    </li>
+
+
+    <li>
+      <a [routerLink]="[ '/home' ]"> Cerrar sesión
+      </a>
+    </li>
+  </ul>
+
 </div>

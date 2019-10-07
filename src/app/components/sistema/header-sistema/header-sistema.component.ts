@@ -10,6 +10,7 @@ export class HeaderSistemaComponent implements OnInit {
   @Output() cambioHeader = new EventEmitter();
   @Input('menus') menus: Array<any>;
 
+  menuUser = false;
 
   constructor() { }
 
@@ -19,6 +20,13 @@ export class HeaderSistemaComponent implements OnInit {
 
   opcion(menu, indice) {
     this.cambioHeader.emit({ opcionMenu: menu, opcionIndice: indice });
+  }
+
+  abrirMenu() {
+    this.menuUser = !this.menuUser;
+  }
+  cerrarUserOpciones() {
+    this.menuUser = false;
   }
 
 }
