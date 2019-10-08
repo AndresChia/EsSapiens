@@ -170,8 +170,28 @@ h1 {
 
 // First example styles
 .example-1 {
-  .wrapper {
-    background: url(https://images.unsplash.com/photo-1496979551903-46e46589a88b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cda12b505afa1beb06e49d89014cbd65&auto=format&fit=crop&w=634&q=80) 20% 1% / cover no-repeat;
+  .wrapper.firstEstudiante {
+    background: url(../../../../assets/images/licen1.jpg) 20% 1% / cover no-repeat;
+  }
+
+  .wrapper.secondEstudiante {
+    background: url(../../../../assets/images/home4.jpg) 20% 1% / cover no-repeat;
+  }
+
+  .wrapper.thirdEstudiante {
+    background: url(../../../../assets/images/home3.jpg) 20% 1% / cover no-repeat;
+  }
+
+  .wrapper.firstEntidad {
+    background: url(../../../../assets/images/licen2.jpg) 20% 1% / cover no-repeat;
+  }
+
+  .wrapper.secondEntidad {
+    background: url(../../../../assets/images/licen3.jpg) 20% 1% / cover no-repeat;
+  }
+
+  .wrapper.thirdEntidad {
+    background: url(../../../../assets/images/licen4.jpg) 20% 1% / cover no-repeat;
   }
 
   .date {
