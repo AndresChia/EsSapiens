@@ -129,7 +129,6 @@ ul {
   float: left;
   margin-top: 27px;
   cursor: pointer;
-  font-family: RalewayMedium, sans-serif;
 }
 
 
@@ -283,7 +282,6 @@ nav {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: RalewayMedium, sans-serif;
 }
 
 .wrapperClose {

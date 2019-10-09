@@ -13,9 +13,14 @@ div.form-group input {
 }
 
 .botonForm.btn {
-  background-color: #343a40;
-  border-color: #343a40;
-  color: #ffffff
+  border: 1px solid #b3b3b3;
+  color: white;
+  background-color: #000;
+}
+
+.botonForm.btn:hover {
+  background-color: #ffa801;
+  color: #ffffff;
 }
 
 .faltante {

@@ -60,7 +60,7 @@
 </section>
 
 <!-- cards -->
-<section class="blog_hcls_w3layouts py-lg-5 py-5" id="team">
+<!-- <section class="blog_hcls_w3layouts py-lg-5 py-5" id="team">
   <div class="container py-sm-5 py-4">
     <div class="header py-lg-5 py-3 text-center">
       <h3 class="tittle mb-lg-3 mb-3">Nuestros servicios</h3>
@@ -126,4 +126,31 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+
+<div class="row fondoNaranaja" style="height: 800px;width: 100%;">
+
+  <div class=" col-md-6">
+    <div class="computador">
+      <div class="compu" [ngStyle]="{'background-position-y': _ScrollParallaxService.efectoParallexFondo()}"></div>
+      <img src="../../../assets/images/computador.png" alt="">
+
+      <div class="boton1">
+
+        <button type="button" name="" id="" class="btn btn-dark botonServices">Servicios</button>
+
+      </div>
+
+
+    </div>
+    <div class="celular">
+
+
+      <div [ngStyle]="{'background-position-y': _ScrollParallaxService.efectoParallexFondo()}"></div>
+      <img src="../../../assets/images/celular.png" alt="">
+
+    </div>
+  </div>
+
+</div>
