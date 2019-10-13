@@ -94,14 +94,27 @@
                 </div>
                 <div *ngIf="tipoMetodoPago == 'efectivo'">
 
-                  <div class="form-group">
-                    <label for=""></label>
+                  <div class="form-group" style="margin-top: 20px">
+                    <label for="">Codigo de asesor</label>
                     <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
-                    <small id="helpId" class="form-text text-muted">Help text</small>
                   </div>
 
                 </div>
                 <div *ngIf="tipoMetodoPago == 'consignacion'">
+
+                  <div class="form-group " style="margin-top: 20px">
+                    <label for="">Numero de cuenta</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Documento de identidad</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Direcciòn</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Correo</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+
+                  </div>
 
                 </div>
 
@@ -178,7 +191,31 @@
                   </div>
                 </div>
 
+                <div *ngIf="tipoMetodoPago == 'efectivo'">
 
+                  <div class="form-group " style="margin-top: 20px">
+                    <label for="">Codigo de asesor</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                  </div>
+
+                </div>
+                <div *ngIf="tipoMetodoPago == 'consignacion'">
+
+                  <div class="form-group" style="margin-top: 20px">
+                    <label for="">Numero de cuenta</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Nombre</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Documento de identidad</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Direcciòn</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+                    <label for="">Correo</label>
+                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+
+                  </div>
+
+                </div>
 
 
               </div>
@@ -237,4 +274,60 @@
     </div>
 
   </section>
+
+  <button id="openModalButton" [hidden]="true" data-toggle="modal" data-target="#myModal"
+    style="visibility: hidden">Open Modal</button>
+
 </body>
+
+
+
+<!-- Modal -->
+<div class="modal fade show" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Agregar evento</h5>
+        <button (click)="router('home')" type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div style="margin-bottom: 30px">
+          <label for="">Si usted ya realizo una cotizacion previa y hablo con alguno de nuestros asesores digite el
+            codigo suministrado por nuestro personal de comercial</label>
+          <input type="text" name="" id="" class="form-control" placeholder="Codigo de compra"
+            aria-describedby="helpId">
+
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="">Comuniquese con nuestros asesores al :</label>
+          <ul>
+            <li>
+              <label for="">+57 312 3313 </label>
+            </li>
+            <li>
+              <label for=""> 312 3313 </label>
+            </li>
+            <li>
+              <label for=""> sapiensVentas@sapiens.com.co </label>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button (click)="router('home')" type="button" class="btn btn-secondary" data-dismiss="modal">Regresar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>

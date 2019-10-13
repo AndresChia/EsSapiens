@@ -22,7 +22,7 @@ export class ScrollParallaxService {
 
   }
 
-  efectoParallex() {
+  efectoParallex(opcion?) {
     // tslint:disable-next-line:object-literal-key-quotes
     return { 'transform': 'translate(0px,' + this.posY + 'px)' };
   }

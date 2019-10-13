@@ -609,38 +609,35 @@ h5.tag {
   position: absolute;
   width: 57vw;
   top: 11vw;
-  left: 36vw;
+  /* left: 36vw; */
+  right: 121PX;
 }
 
 .celular div {
 
   background: url(../../../assets/images/parallax-celular.jpg);
   border-radius: 1.5vw;
-  background-size: 100% 28vw;
-
+  background-size: 100% 29.4vw;
   background-position-y: 0vw;
   /* background-attachment: fixed; */
   background-position-x: 77vw;
   background-repeat-x: repeat;
   background-repeat-y: repeat;
   width: 11vw !important;
-  left: 78.2vw !important;
-
-
-
+  left: 33.2vw !important;
 }
 
 
 .computador div.compu {
-  background: url(../../../assets/images/parallax-computador.jpg);
-  height: 30vw;
-  width: 45vw;
+  background: url(../../../assets/images/parralax-computador.png);
+  height: 29vw;
+  width: 43.3vw;
   overflow: hidden;
-  left: 42vw;
+  left: -9.6vw;
   top: 12vw;
   border-radius: 11px;
   background-position-y: 0vw;
-  background-size: 45vw 97vw;
+  background-size: 100% 231%;
   background-position-x: 0vw;
   background-repeat-y: repeat;
   background-repeat-x: no-repeat;
@@ -668,7 +665,7 @@ h5.tag {
   position: absolute;
   width: 13vw;
   top: 22vw;
-  left: 77.2vw;
+  left: 32.2vw;
   height: 23.5vw;
 }
 
@@ -903,6 +900,7 @@ h5.tag {
     background-position-x: 86.5vw;
     background-position-y: 0vw;
     left: 90vw !important;
+
   }
 
   .Celular-mobile {
@@ -987,11 +985,19 @@ h5.tag {
   border: 1px solid #b3b3b3;
   color: white;
   background-color: #000;
-  width: 200px;
+  /* width: 200px; */
   border-radius: 13px;
 }
 
 .botonServices:hover {
   background-color: #1E272E;
   color: #ffffff;
+}
+
+.boton1 {
+  margin-top: 23px;
+}
+
+.contenedorCompuCel {
+  /* overflow: hidden; */
 }

@@ -29,6 +29,8 @@ import { ProximamenteComponent } from './components/sistema/proximamente/proxima
 import { ChartsModule } from 'ng2-charts';
 import { AlmanaqueComponent } from './components/sistema/almanaque/almanaque.component';
 import { HorarioComponent } from './components/sistema/horario/horario.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -60,7 +62,8 @@ import { HorarioComponent } from './components/sistema/horario/horario.component
     FontAwesomeModule,
     TabViewModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule
   ],
   providers: [ControlarPestañasService],
   bootstrap: [AppComponent]

@@ -132,15 +132,42 @@
 <div class="row fondoNaranaja" style="height: 800px;width: 100%;">
 
   <div class=" col-md-6">
-    <div class="computador">
-      <div class="compu" [ngStyle]="{'background-position-y': _ScrollParallaxService.efectoParallexFondo()}"></div>
-      <img src="../../../assets/images/computador.png" alt="">
+
+    <div class="contenedorPotencial col-md-6">
+      <p class="titulo"> DESCUBRE EL <br> POTENCIAL DE <br> TU <span>UNIVERSIDAD</span>. </p>
+      <div class="subtitulos primerSub">
+        <p><span>Centralizar tus datos</span> toda tu organizacion a tu medida y en un solo lugar. </p>
+      </div>
+      <div class="subtitulos">
+        <p><span>Semestre a semestre ten apuntes</span> como estudiantes vas a tener toda la informacion de proyectos,
+          examenes y apuntes. </p>
+      </div>
+      <div class="subtitulos">
+        <p><span>Soporte de software </span> tu software estara siempre actualizado con tus ultimos deseos. </p>
+        <p><span> Y tu? que esperas?</span></p>
+      </div>
 
       <div class="boton1">
 
-        <button type="button" name="" id="" class="btn btn-dark botonServices">Servicios</button>
+        <button type="button" name="" id="" class="btn btn-dark btn-block botonServices">Registrate</button>
 
       </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+  <div class="contenedorCompuCel  col-md-6">
+    <div class="computador">
+      <div class="compu" [ngStyle]="{'background-position-y': _ScrollParallaxService.efectoParallexFondo('sumar')}">
+      </div>
+      <img src="../../../assets/images/computador.png" alt="">
+
+
 
 
     </div>

@@ -16,25 +16,32 @@ export class SistemaComponent implements OnInit {
 
   menus: Array<any> = [
     {
-      nombre: "Banco de datos"
+      nombre: "Banco de datos",
+      icon: "icon-2"
     },
     {
-      nombre: "Almanaque"
+      nombre: "Almanaque",
+      icon: "icon-10"
     },
     {
-      nombre: "Horario"
+      nombre: "Horario",
+      icon: "icon-3"
     },
     {
-      nombre: "Clases"
+      nombre: "Clases",
+      icon: "icon-6"
     },
     {
-      nombre: "Parqueadero"
+      nombre: "Parqueadero",
+      icon: "icon-7"
     },
     {
-      nombre: "Biblioteca"
+      nombre: "Biblioteca",
+      icon: "icon-2"
     },
     {
-      nombre: "Medio universitario"
+      nombre: "Medio universitario",
+      icon: "icon-1"
     }
   ];
   constructor() { }

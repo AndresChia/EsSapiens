@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
 
+  servicioActual = 0;
+
+  informacionServicios = [{
+    nombre: ""
+  }, {
+    nombre: ""
+  }
+  ];
+
   constructor() { }
 
   ngOnInit() {

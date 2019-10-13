@@ -3,7 +3,8 @@
   <div class="col-2 menuLateral">
 
     <div class="contenedorNuevo">
-      <button type="button" name="" id="" class="botonNuevo btn btn-lg btn-block">
+      <input #file style="visibility:collapse" type="file" (change)="upload(file.files)">
+      <button (click)="file.click()" type="button" name="" id="" class="botonNuevo btn btn-lg btn-block">
         <img src="../../../../assets/images/plus.png" alt="">
         Nuevo
       </button>
@@ -37,10 +38,10 @@
 
         <div class="row clearfix">
 
-          <div class="col-lg-3">
+          <div *ngFor="let file of files; let i=index" class="col-lg-3">
             <div class="card">
               <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
+                <a (click)="masInfo(i)" style="cursor: pointer">
                   <div class="hover">
                     <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
                       <i class="zmdi zmdi-delete"></i>
@@ -50,73 +51,17 @@
                     <i class="zmdi zmdi-file-text"></i>
                   </div>
                   <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                    <p class="m-b-5 text-muted" style="margin: 0px">{{file.nombreArchivo}}</p>
+                    <small>{{file.peso}} <span class="date text-muted"
+                        style="float: right;">{{file.fecha}}</span></small>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
-                  <div class="hover">
-                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
-                      <i class="zmdi zmdi-delete"></i>
-                    </button>
-                  </div>
-                  <div class="icon">
-                    <i class="zmdi zmdi-file-text"></i>
-                  </div>
-                  <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
-                  <div class="hover">
-                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
-                      <i class="zmdi zmdi-delete"></i>
-                    </button>
-                  </div>
-                  <div class="icon">
-                    <i class="zmdi zmdi-file-text"></i>
-                  </div>
-                  <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
-                  <div class="hover">
-                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
-                      <i class="zmdi zmdi-delete"></i>
-                    </button>
-                  </div>
-                  <div class="icon">
-                    <i class="zmdi zmdi-file-text"></i>
-                  </div>
-                  <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+
+
+
 
         </div>
       </div>
@@ -146,10 +91,10 @@
 
         <div class="row clearfix">
 
-          <div class="col-lg-3">
+          <div *ngFor="let file of filesXsemestre;let i=index" class="col-lg-3">
             <div class="card">
               <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
+                <a (click)="masInfo(i)" style="cursor: pointer">
                   <div class="hover">
                     <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
                       <i class="zmdi zmdi-delete"></i>
@@ -159,73 +104,15 @@
                     <i class="zmdi zmdi-file-text"></i>
                   </div>
                   <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
+                    <p class="m-b-5 text-muted" style="margin: 0px">{{file.nombreArchivo}}</p>
+                    <small>{{file.peso}} <span class="date text-muted"
+                        style="float: right;">{{file.fecha}}</span></small>
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
-                  <div class="hover">
-                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
-                      <i class="zmdi zmdi-delete"></i>
-                    </button>
-                  </div>
-                  <div class="icon">
-                    <i class="zmdi zmdi-file-text"></i>
-                  </div>
-                  <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
-                  <div class="hover">
-                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
-                      <i class="zmdi zmdi-delete"></i>
-                    </button>
-                  </div>
-                  <div class="icon">
-                    <i class="zmdi zmdi-file-text"></i>
-                  </div>
-                  <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card">
-              <div class="file">
-                <a (click)="masInfo()" style="cursor: pointer">
-                  <div class="hover">
-                    <button type="button" class="btn btn-icon btn-icon-mini btn-round btn-danger">
-                      <i class="zmdi zmdi-delete"></i>
-                    </button>
-                  </div>
-                  <div class="icon">
-                    <i class="zmdi zmdi-file-text"></i>
-                  </div>
-                  <div class="file-name">
-                    <p class="m-b-5 text-muted" style="margin: 0px">Document_2017.doc</p>
-                    <small>Size: 42KB <span class="date text-muted" style="float: right;">Nov 02, 2017</span></small>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+
 
         </div>
 
@@ -247,10 +134,10 @@
       <h1 style="font-size: 1.5rem;">Detalle del archivo</h1>
     </div>
 
-    <h6>Document_2017.doc</h6>
-    <h6>Size: 42KB</h6>
-    <h6>Nov 02, 2017</h6>
-    <h6>Andres Chia</h6>
+    <h6>{{files[elementActual].nombreArchivo}}</h6>
+    <h6>{{files[elementActual].peso}}</h6>
+    <h6>{{files[elementActual].fecha}}</h6>
+    <h6>{{files[elementActual].autor}}</h6>
 
 
   </div>

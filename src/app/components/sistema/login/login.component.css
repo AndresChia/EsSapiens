@@ -1,5 +1,11 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 
+
+.left img {
+  margin-left: 68px;
+  margin-top: 59px;
+}
+
 ::selection {
   background: #2D2F36;
 }

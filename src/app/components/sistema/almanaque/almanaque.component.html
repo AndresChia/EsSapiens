@@ -1,121 +1,176 @@
 <table id="calendar" cellspacing="0" cellpadding="0" summary="This month's calendar">
 
-  <caption><a href="#" title="previous month" class="nav"> &laquo;</a> Marzo
-    <a href="#" title="siguiente mes" class="nav"> &raquo;</a></caption>
+  <caption><a title="Anterior mes" class="nav"> &laquo;</a> Marzo
+    <a title="siguiente mes" class="nav"> &raquo;</a></caption>
 
   <tr style=" height: 124px;">
 
-    <th scope="col" abbr="Sunday" title="Sunday">Domingo</th>
+    <th scope="col" abbr="Sunday" title="Domingo">Domingo</th>
 
-    <th scope="col" abbr="Monday" title="Monday">Lunes</th>
+    <th scope="col" abbr="Monday" title="Lunes">Lunes</th>
 
-    <th scope="col" abbr="Tuesday" title="Tuesday">Martes</th>
+    <th scope="col" abbr="Tuesday" title="Martes">Martes</th>
 
     <th scope="col" abbr="Wednesday" title="Wednesday">Miercoles</th>
 
-    <th scope="col" abbr="Thursday" title="Thursday">Jueves</th>
+    <th scope="col" abbr="Thursday" title="Jueves">Jueves</th>
 
-    <th scope="col" abbr="Friday" title="Friday">Viernes</th>
+    <th scope="col" abbr="Friday" title="Viernes">Viernes</th>
 
-    <th scope="col" abbr="Saturday" title="Saturday">Sabado</th>
-
-  </tr>
-
-  <tr>
-
-    <td> </td>
-
-    <td> </td>
-
-    <td>1</td>
-
-    <td>2</td>
-
-    <td>3</td>
-
-    <td>4</td>
-
-    <td>5</td>
+    <th scope="col" abbr="Saturday" title="Sabados">Sabado</th>
 
   </tr>
 
   <tr>
 
-    <td class="today"><a href="#">6</a></td>
+    <td (click)="elegirFecha($event,1)"> </td>
 
-    <td>7</td>
+    <td (click)="elegirFecha($event,2)"> </td>
 
-    <td>8</td>
+    <td (click)="elegirFecha($event,3)">1</td>
 
-    <td>9</td>
+    <td (click)="elegirFecha($event,4)">2</td>
 
-    <td><a href="#">10</a></td>
+    <td (click)="elegirFecha($event,5)">3</td>
 
-    <td>11</td>
+    <td (click)="elegirFecha($event,6)">4</td>
 
-    <td>12</td>
-
-  </tr>
-
-  <tr>
-
-    <td><a href="#">13</a></td>
-
-    <td>14</td>
-
-    <td>15</td>
-
-    <td>16</td>
-
-    <td>17</td>
-
-    <td>18</td>
-
-    <td>19</td>
+    <td (click)="elegirFecha($event,7)">5</td>
 
   </tr>
 
   <tr>
 
-    <td>20</td>
+    <td (click)="elegirFecha($event,1)" class="today"><a>6</a></td>
 
-    <td>21</td>
+    <td (click)="elegirFecha($event,2)">7</td>
 
-    <td>22</td>
+    <td (click)="elegirFecha($event,3)">8</td>
 
-    <td><a href="#">23</a></td>
+    <td (click)="elegirFecha($event,4)">9</td>
 
-    <td>24</td>
+    <td (click)="elegirFecha($event,5)"><a>10</a></td>
 
-    <td>25</td>
+    <td (click)="elegirFecha($event,6)">11</td>
 
-    <td>26</td>
+    <td (click)="elegirFecha($event,7)">12</td>
 
   </tr>
 
   <tr>
 
-    <td>27</td>
+    <td (click)="elegirFecha($event,1)"><a>13</a></td>
 
-    <td>28</td>
+    <td (click)="elegirFecha($event,2)">14</td>
 
-    <td>29</td>
+    <td (click)="elegirFecha($event,3)">15</td>
 
-    <td>30</td>
+    <td (click)="elegirFecha($event,4)">16</td>
 
-    <td>31</td>
+    <td (click)="elegirFecha($event,5)">17</td>
 
-    <td> &nbsp;</td>
+    <td (click)="elegirFecha($event,6)">18</td>
 
-    <td> &nbsp;</td>
+    <td (click)="elegirFecha($event,7)">19</td>
+
+  </tr>
+
+  <tr>
+
+    <td (click)="elegirFecha($event,1)">20</td>
+
+    <td (click)="elegirFecha($event,2)">21</td>
+
+    <td (click)="elegirFecha($event,3)">22</td>
+
+    <td (click)="elegirFecha($event,4)"><a>23</a></td>
+
+    <td (click)="elegirFecha($event,5)">24</td>
+
+    <td (click)="elegirFecha($event,6)">25</td>
+
+    <td (click)="elegirFecha($event,7)">26</td>
+
+  </tr>
+
+  <tr>
+
+    <td (click)="elegirFecha($event,1)">27</td>
+
+    <td (click)="elegirFecha($event,2)">28</td>
+
+    <td (click)="elegirFecha($event,3)">29</td>
+
+    <td (click)="elegirFecha($event,4)">30</td>
+
+    <td (click)="elegirFecha($event,5)">31</td>
+
+    <td (click)="elegirFecha($event,6)"> </td>
+
+    <td (click)="elegirFecha($event,7)"> </td>
 
   </tr>
 
 </table>
 
 <div class="col-2 menuInfo">
+
+  <div class="contenedorBotonMas" *ngIf="diaSelecionado !== ''">
+    <button class="botonNuevo btn " id="" name="" type="button" data-toggle="modal"
+      data-target="#exampleModalCenter"><img alt="" src="../../../../assets/images/plus.png"></button>
+  </div>
+
   <div class="titulo">
     <h1 style="font-size: 1.5rem;">Detalle del dia</h1>
   </div>
 
+
+  <div *ngIf="diaSelecionado !== ''">
+    <h1 style="font-size: 1rem;">{{nombreDia}} {{diaSelecionado}} del 2019 </h1>
+
+    <ul>
+      <li>Parcial de calculo</li>
+      <li>Estudiar</li>
+    </ul>
+
+  </div>
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Agregar evento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+
+
+
+        <div class="form-group">
+          <label for="">Nombre</label>
+          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+
+          <label for="">Información</label>
+          <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
+
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
